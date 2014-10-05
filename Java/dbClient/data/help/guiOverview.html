@@ -1,0 +1,132 @@
+<html>
+  <head>
+  	<title>GUI Overview</title>
+  </head>
+  <body marginheight="0" marginwidth="0">
+  	<h1><a name="guiOverview"></a>GUI Overview</h1>
+  	This tool's GUI is composed of three main area which are:
+  	<ul>
+  		<li><a href="#menuArea">Menu Area</a></li>
+  		<li><a href="#leftArea">Left Area</a></li>
+  		<li><a href="#rightTopArea">Right Top Area</a></li>
+  		<li><a href="#rightBottomArea">Right Bottom Area</a></li>
+  	</ul>
+  	<table align="center" boder="0">
+  		<tr>
+  			<td><img alt="Overall view" src="./images/view.gif" /></td>
+  		</tr>
+  		<tr>
+  			<td><p align="center">Fig 1. Overall view.</p></td>
+  		</tr>
+  	</table>
+
+
+    <h2><a name="menuArea"></a>Menu Area</h2>
+    The Menu Area is composed of the menu for this application.
+  	<table align="center" boder="0">
+  		<tr>
+  			<td><img alt="Overall view" src="./images/menu.gif" /></td>
+  		</tr>
+  		<tr>
+  			<td><p align="center">Fig 2. Menu.</p></td>
+  		</tr>
+  	</table>
+  	<ul>
+  		<li><a name="FileView"></a><b>File</b>: Contains some general options. Options:
+  			<ul>
+  				<li><b>Quit</b>: Closes the application.</li>
+  			</ul>
+  		</li>
+  		<li><a name="MenuView"></a><b>View</b>: Allows to activate or deactivate some of the available views. Options:
+  			<ul>
+  				<li><b>Log View</b>: Allows to hide or display the <a href="#rightBottomArea">Log View</a>.</li>
+  			</ul>
+  		</li>
+  		<li><a name="MenuActionsV"></a><b>Actions</b>: Contains the actions available to the current selected element on the tree view (<a href="#leftArea">Left Area</a>).</li>
+  		<li><a name="MenuHelp"></a><b>Help</b>: Contains a link to this help. Options:
+  			<ul>
+  				<li><b>About</b>: Simple view of this tool identification and version.</li>
+  				<li><b>Content</b>: This help.</li>
+  			</ul>
+  		</li>
+  	</ul>
+
+
+    <h2><a name="leftArea"></a>Left Area</h2>
+      <table align="right" boder="0">
+  		    <tr>
+  		    	<td rowspan="2">
+      			<p>This area is composed of a tree constituted of nodes which correspond to connections, buckets and tuples. To access the actions that can be executed for an node select a node and now there are two ways to see the actions available by:</p>
+      			<ul>
+  	    			<li>Double click on the node which will show a popupmenu with the available action for that specific node.</li>
+  	    			<li>Select the main manu "Actions" to show the popupmenu with the available action for that specific node.</li>
+      			</ul>
+      			<p>Once the popupmenu is shown select the appropriate active option to execute the corresponding operation (action).</p><br />
+
+      			<p>The popup have some actions specific for the type of node, so they are common to all the NOSQL databases and others specific to the current database(s) connected to, which appear at the bottom of the popupmenu.</p><br />
+  
+      			<p>The main node type are:</p>
+  		    	</td>
+  		    	<td><img alt="Overall view" src="./images/viewLeft.gif" /></td>
+  	    	</tr>
+  	    	<tr>
+      			<td><p align="center">Fig 3. Tree view.</p></td>
+  	    	</tr>
+      </table>
+
+      <ul>
+  	    <li><a name="rootNode"></a>Root: root of the system that allows to create multiple connections.</li>
+
+  	    <li><a name="clientNode"></a>Connection: a connection that when created will ne to be executed the connect action before being able to create or read buckets.</li>
+
+  	    <li><a name="bucketNode"></a>Bucket: a bucket containing none or many tuples.</li>
+
+  	    <li><a name="tupleNode"></a>Tuple: composed of a key and a value.</li>
+      </ul>
+
+
+    <h2><a name="rightTopArea"></a>Right Top Area</h2>
+    On this area it is displayed the details of the details for the selection made on the <a href="#leftArea">Left Area</a>. On top of this is displayed the application menu in some OSs and the title for this application. In Mac the menu is displayed on the top of the screen.
+    
+  	<table align="center" boder="0">
+  		<tr>
+  			<td><img alt="Details view" src="./images/viewRightTop.gif" /></td>
+  		</tr>
+  		<tr>
+  			<td><p align="center">Fig 4. Details view.</p></td>
+  		</tr>
+  	</table>
+
+
+    <h2><a name="rightBottomArea"></a>Right Bottom Area</h2>
+    On tis area the logged messages are displayed and the log menu is shown too. The log view area is at the bottom and on top it is the log menu.
+    
+  	<table align="center" boder="0">
+  		<tr>
+  			<td><img alt="Log view" src="./images/viewLogView.gif" /></td>
+  		</tr>
+  		<tr>
+  			<td><p align="center">Fig 5. Log view.</p></td>
+  		</tr>
+  	</table>
+
+  	<ul>
+  		<li><img src="./images/close.gif" /> &nbsp; it is close button. When pressed the full log view is hidden. To show the full log view go to the menu under <a href="#MenuView">View</a>.</li>
+  		<li><img src="./images/clear.gif" /> &nbsp; it is clear button. When pressed the log view is cleared of any message.</li>
+  		<li><img src="./images/help.gif" /> &nbsp; it is help button. When pressed the simple command line help is displayed on the log view.</li>
+  		<li>The combo list allow to filter the message types displayed on the log view. The message types are displayed in ascending oder of priority. Message type lower in the combo list corresponds to higher priority. Any selection identify from which priority messages will be displayed on the log view. The available type:
+  		<ul>
+  			<li><b>ALL</b>: shows all the messages.</li>
+  			<li><b>FINEST</b>: shows all the messages from those of type 'FINEST' to 'SEVERE'and with no-type.</li>
+  			<li><b>FINER</b>: shows all the messages from those of type 'FINER' to 'SEVERE' and with no-type.</li>
+  			<li><b>FINE</b>: shows all the messages from those of type 'FINE' to 'SEVERE' and with no-type.</li>
+  			<li><b>CONFIG</b>: shows all the messages from those of type 'CONFIG' to 'SEVERE' and with no-type.</li>
+  			<li><b>INFO</b>: shows all the messages from those of type 'INFO' to 'SEVERE' and with no-type.</li>
+  			<li><b>WARNING</b>: shows all the messages from those of type 'WARNING' to 'SEVERE' and with no-type.</li>
+  			<li><b>SEVERE</b>: shows all the messages from those of type 'SEVERE' and with no-type.</li>
+  			<li><b>OFF</b>: shows all the messages from those with no-type.</li>
+  		</ul>
+  		</li>
+  	</ul>
+  </body>
+</html>

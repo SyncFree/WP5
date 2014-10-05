@@ -1,0 +1,7 @@
+# Version 0.00
+# HTTP connection
+#Client1,HTTP,http://192.168.0.6:8098/riak,
+Client1,HTTP,http://10.1.63.234:8098/riak,
+# PBC connection
+#Client2,PBC,192.168.0.6,,8087,
+Client2,PBC,10.1.63.234,,8087,

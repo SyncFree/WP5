@@ -1,0 +1,44 @@
+<html>
+  <head>
+  	<title>Introduction</title>
+  </head>
+  <body marginheight="0" marginwidth="0">
+  	<h1><a name="introduction"></a>Introduction</h1>
+  	This tool is part of the SyncFree project ...
+  	
+  	
+  	<h1>Command Line Arguments</h1>
+  	<p>The general format supported to run the tool with the valid arguments:</p>
+
+  	<p>DBGuiTool [-l logging_level [out_filename] [+]] [-m properties_filename] [-db db_controller] [-in filename]</p>
+
+	<p>Description of the command line valid arguments:</p>
+	<ul>
+	<li><b>-l logging_level [out_filename] [+]</b>
+	  <p>Sets the logging level to the specified value from the logging root.</p>
+	  <ul>
+		<li><b>logging_level</b> The logging level.</li>
+		<li><b>out_filename></b> The output verbose file.</li>
+		<li><b>+</b> Output verbose to file and standard output.</li>
+	  </ul></li>
+	
+	<li><b>-m properties_filename</b>
+	<p>Set the property file to be used.</b>
+	  <ul>
+	    <li><b>properties_filename</b> The name of the property file.</li>
+	  </ul></li>
+
+	<li><b>-db db_controller</b>
+	  <p>Set the DB controller to be used.</b>
+	  <ul>
+	  	<li><b>db_controller</b> The name of the DB controller, default riak.</li>
+	  </ul></li>
+
+	<li><b>-in filename</b>
+	  <p>Sets the input clients details file.</p>
+	  <ul>
+		<li><b>filename</b> The input clients details filename.</li>
+	  </ul></li>
+	</ul>
+  </body>
+</html>
