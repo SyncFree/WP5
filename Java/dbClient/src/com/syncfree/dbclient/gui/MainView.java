@@ -437,8 +437,8 @@ public class MainView extends JFrame implements WindowListener, IView {
 
         // Centre on screen
         final Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
-        final int x = (int) ((d.getWidth() - this.getWidth()) / 2);
-        final int y = (int) ((d.getHeight() - this.getHeight()) / 2);
+        final int x = (int) ((d.getWidth() - getWidth()) / 2);
+        final int y = (int) ((d.getHeight() - getHeight()) / 2);
 
         setLocation(x, y);
         setEnabled(true);

@@ -71,7 +71,7 @@ public class DBGuiTool {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
             Verbose.log(e, "Failed to set look and feel; {0}", e.getMessage());
-        }
+        } // end try
 
         // Start GUI
         final IController controller = getController(astrArgs);
